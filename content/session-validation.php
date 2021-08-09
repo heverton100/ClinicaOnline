@@ -1,22 +1,14 @@
 <?php 
 
+require 'C:/xampp/htdocs/clinica/app/dao/daoUser.php';
+
+$teste = new daoUser;
+
 if (isset($_SESSION['email_user'])) {
 
 	$usuario = $_SESSION['email_user'];
 
-	$result_usuario = "SELECT SIS.*,
-        (CASE WHEN SIS.profissional = 1 THEN PRO.nome
-            WHEN SIS.paciente = 1 THEN PAC.nome END) AS NOME,
-        (CASE WHEN SIS.profissional = 1 THEN PRO.url_foto
-            WHEN SIS.paciente = 1 THEN PAC.url_foto END) AS URLFOTO,
-        (CASE WHEN SIS.profissional = 1 THEN PRO.ID_PROFISSIONAL
-            WHEN SIS.paciente = 1 THEN PAC.ID_PACIENTE END) AS ID
-        FROM sis_usuario SIS 
-        LEFT JOIN tbl_profissional PRO ON PRO.ID_USUARIO = SIS.ID_USUARIO 
-        LEFT JOIN tbl_paciente PAC ON PAC.ID_USUARIO = SIS.ID_USUARIO
-        WHERE SIS.email = '$usuario' LIMIT 1";
-    $resultado_usuario = mysqli_query($conn, $result_usuario);
-    $resultado = mysqli_fetch_assoc($resultado_usuario);
+    $resultado = $teste->session_validation($usuario);
     
     if(isset($resultado)){
 

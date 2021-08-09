@@ -195,14 +195,14 @@ Version      : 1.3
 		});
 	}
 	
-	if($('.doctor-slider').length > 0) {
+/*	if($('.doctor-slider').length > 0) {
 		$('.doctor-slider').slick({
 			dots: false,
 			autoplay:false,
 			infinite: true,
 			variableWidth: true,
 		});
-	}
+	}*/
 	if($('.features-slider').length > 0) {
 		$('.features-slider').slick({
 			dots: true,
