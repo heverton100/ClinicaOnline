@@ -162,11 +162,9 @@ switch($_GET["function"]) {
 
 		$email = $_POST['email'];
 
-		$teste->check_email($email);
+		$response = $uc->check_email($email);
 
-		$row_email = $teste->check_email($email);
-
-		if (isset($row_email['email'])) {
+		if (isset($response['email'])) {
 			echo "1";
 		}else{
 			echo "0";

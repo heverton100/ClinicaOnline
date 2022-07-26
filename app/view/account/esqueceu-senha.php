@@ -57,10 +57,10 @@ include '../app/view/content/header.php';
 
 
 <script type="text/javascript">
-	/*$("#email").blur(function(){
+	$("#email").blur(function(){
 		var txt = $("#email").val();
 		if (txt != '') {
-			$.post("../app/controllers/userController.php?function=check_email", {email: txt}, function(result){
+			$.post("../app/controller/HandlerUsuario.php?function=check_email", {email: txt}, function(result){
 				if (result == 0) {
 					$("#msgretorno").css("display", "block");
 					$("#resetarsenha").prop("disabled", true );
@@ -70,5 +70,5 @@ include '../app/view/content/header.php';
 				}
 			});
 		}
-	});*/
+	});
 </script>

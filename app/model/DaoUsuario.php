@@ -145,7 +145,18 @@ class DaoUsuario extends ConexaoOO {
 			return "Error: " . $update . "<br>" . mysqli_error($conn);
 		}
 
-		
+	}
+
+	public function check_email($email){
+
+		$conn = ConexaoOO::connection();
+
+		//CHECAGEM DE EMAIL DUPLICADO
+		$select_email = "SELECT email FROM sis_usuario WHERE email = '".$email."'";
+		$result_email = mysqli_query($conn, $select_email);
+		$row_email = mysqli_fetch_assoc($result_email);
+
+		return $row_email;
 	}
 
 

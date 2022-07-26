@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include '../../content/header.php'; 
+include '../app/view/dashboard/content/header-dash.php';
 ?>
 
 <!-- Page Content -->
@@ -10,7 +10,7 @@ include '../../content/header.php';
 		<div class="row">
 			<div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
 				
-			<?php include 'sidebar.php' ?>
+			<?php include '../app/view/dashboard/content/sidebar-profissional.php'; ?>
 				
 			</div>
 			
@@ -25,7 +25,7 @@ include '../../content/header.php';
 										<div class="dash-widget dct-border-rht">
 											<div class="circle-bar circle-bar1">
 												<div class="circle-graph1" data-percent="75">
-													<img src="../../assets/img/icon-01.png" class="img-fluid" alt="patient">
+													<img src="../../public/img/icon-01.png" class="img-fluid" alt="patient">
 												</div>
 											</div>
 											<div class="dash-widget-info">
@@ -40,7 +40,7 @@ include '../../content/header.php';
 										<div class="dash-widget dct-border-rht">
 											<div class="circle-bar circle-bar2">
 												<div class="circle-graph2" data-percent="65">
-													<img src="../../assets/img/icon-02.png" class="img-fluid" alt="Patient">
+													<img src="../../public/img/icon-02.png" class="img-fluid" alt="Patient">
 												</div>
 											</div>
 											<div class="dash-widget-info">
@@ -55,7 +55,7 @@ include '../../content/header.php';
 										<div class="dash-widget">
 											<div class="circle-bar circle-bar3">
 												<div class="circle-graph3" data-percent="50">
-													<img src="../../assets/img/icon-03.png" class="img-fluid" alt="Patient">
+													<img src="../../public/img/icon-03.png" class="img-fluid" alt="Patient">
 												</div>
 											</div>
 											<div class="dash-widget-info">
@@ -150,13 +150,13 @@ include '../../content/header.php';
 </div>		
 <!-- /Page Content -->
 
-<?php include '../../content/footer.php'; ?>
+<?php include '../app/view/dashboard/content/footer-dash.php'; ?>
 
 <script type="text/javascript">
 
-	$.post("../../app/controllers/profissionalController.php?function=retorna_agendamentos", 
+	/*$.post("../../app/controllers/profissionalController.php?function=retorna_agendamentos", 
 	{
-		id_profissional: <?php echo $_SESSION['IDPROFISSIONAL']; ?>
+		id_profissional: <?php //echo $_SESSION['IDPROFISSIONAL']; ?>
 	},
 	function(result){
 		$("#retornoAgendamentos").html(result);
@@ -164,10 +164,10 @@ include '../../content/header.php';
 
 	$.post("../../app/controllers/profissionalController.php?function=retorna_agendamentos_hoje", 
 	{
-		id_profissional: <?php echo $_SESSION['IDPROFISSIONAL']; ?>
+		id_profissional: <?php //echo $_SESSION['IDPROFISSIONAL']; ?>
 	},
 	function(result){
 		$("#retornoAgendamentosHoje").html(result);
-	});
+	});*/
 
 </script>

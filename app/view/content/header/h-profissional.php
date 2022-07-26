@@ -52,7 +52,7 @@
 									<p class="text-muted mb-0"><?php echo $_SESSION['email_user']; ?></p>
 								</div>
 							</div>
-							<a class="dropdown-item" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/clinica/dashboard/profissional/index.php">Minha Conta</a>
+							<a class="dropdown-item" href="../public/dashboard/profissional_main">Minha Conta</a>
 							<a class="dropdown-item" href="../public/logout">Logout</a>
 						</div>
 					</li>

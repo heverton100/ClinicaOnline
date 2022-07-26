@@ -85,6 +85,13 @@ class UsuarioController extends DaoUsuario {
 		return $response;
 	}
 
+	public function check_email($email){
+		
+		$response = DaoUsuario::check_email($email);
+
+		return $response;
+	}
+
 }
 
 ?>

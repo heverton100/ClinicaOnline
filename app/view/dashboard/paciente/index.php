@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include '../../content/header.php'; 
+include '../app/view/dashboard/content/header-dash.php';
 ?>
 
 <!-- Page Content -->
@@ -12,7 +12,7 @@ include '../../content/header.php';
 			<!-- Profile Sidebar -->
 			<div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
 
-				<?php include 'sidebar.php' ?>
+				<?php include '../app/view/dashboard/content/sidebar-paciente.php'; ?>
 				
 			</div>
 			<!-- / Profile Sidebar -->
@@ -90,7 +90,7 @@ include '../../content/header.php';
 														<td>
 															<h2 class="table-avatar">
 																<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
-																	<img class="avatar-img rounded-circle" src="../../assets/img/doctors/doctor-thumb-01.jpg" alt="User Image">
+																	<img class="avatar-img rounded-circle" src="../../public/img/doctors/doctor-thumb-01.jpg" alt="User Image">
 																</a>
 																<a href="doctor-profile.html">Dr. Diedra Spangler <span>Dental</span></a>
 															</h2>
@@ -112,7 +112,7 @@ include '../../content/header.php';
 														<td>
 															<h2 class="table-avatar">
 																<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
-																	<img class="avatar-img rounded-circle" src="../../assets/img/doctors/doctor-thumb-02.jpg" alt="User Image">
+																	<img class="avatar-img rounded-circle" src="../../public/img/doctors/doctor-thumb-02.jpg" alt="User Image">
 																</a>
 																<a href="doctor-profile.html">Dr. Kalen Chavez <span>Dental</span></a>
 															</h2>
@@ -134,7 +134,7 @@ include '../../content/header.php';
 														<td>
 															<h2 class="table-avatar">
 																<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
-																	<img class="avatar-img rounded-circle" src="../../assets/img/doctors/doctor-thumb-03.jpg" alt="User Image">
+																	<img class="avatar-img rounded-circle" src="../../public/img/doctors/doctor-thumb-03.jpg" alt="User Image">
 																</a>
 																<a href="doctor-profile.html">Dr. Bedeelia Elliott <span>Cardiology</span></a>
 															</h2>
@@ -156,7 +156,7 @@ include '../../content/header.php';
 														<td>
 															<h2 class="table-avatar">
 																<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
-																	<img class="avatar-img rounded-circle" src="../../assets/img/doctors/doctor-thumb-04.jpg" alt="User Image">
+																	<img class="avatar-img rounded-circle" src="../../public/img/doctors/doctor-thumb-04.jpg" alt="User Image">
 																</a>
 																<a href="doctor-profile.html">Dr. Alyxandra Foster <span>Urology</span></a>
 															</h2>
@@ -206,7 +206,7 @@ include '../../content/header.php';
 														<td>
 															<h2 class="table-avatar">
 																<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
-																	<img class="avatar-img rounded-circle" src="../../assets/img/doctors/doctor-thumb-01.jpg" alt="User Image">
+																	<img class="avatar-img rounded-circle" src="../../public/img/doctors/doctor-thumb-01.jpg" alt="User Image">
 																</a>
 																<a href="doctor-profile.html">Dr. Diedra Spangler <span>Dental</span></a>
 															</h2>
@@ -230,7 +230,7 @@ include '../../content/header.php';
 														<td>
 															<h2 class="table-avatar">
 																<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
-																	<img class="avatar-img rounded-circle" src="../../assets/img/doctors/doctor-thumb-02.jpg" alt="User Image">
+																	<img class="avatar-img rounded-circle" src="../../public/img/doctors/doctor-thumb-02.jpg" alt="User Image">
 																</a>
 																<a href="doctor-profile.html">Dr. Kalen Chavez <span>Dental</span></a>
 															</h2>
@@ -254,7 +254,7 @@ include '../../content/header.php';
 														<td>
 															<h2 class="table-avatar">
 																<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
-																	<img class="avatar-img rounded-circle" src="../../assets/img/doctors/doctor-thumb-03.jpg" alt="User Image">
+																	<img class="avatar-img rounded-circle" src="../../public/img/doctors/doctor-thumb-03.jpg" alt="User Image">
 																</a>
 																<a href="doctor-profile.html">Dr. Bedeelia Elliott <span>Cardiology</span></a>
 															</h2>
@@ -301,7 +301,7 @@ include '../../content/header.php';
 														<td>
 															<h2 class="table-avatar">
 																<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
-																	<img class="avatar-img rounded-circle" src="../../assets/img/doctors/doctor-thumb-01.jpg" alt="User Image">
+																	<img class="avatar-img rounded-circle" src="../../public/img/doctors/doctor-thumb-01.jpg" alt="User Image">
 																</a>
 																<a href="doctor-profile.html">Diedra Spangler <span>Dental</span></a>
 															</h2>
@@ -326,7 +326,7 @@ include '../../content/header.php';
 														<td>
 															<h2 class="table-avatar">
 																<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
-																	<img class="avatar-img rounded-circle" src="../../assets/img/doctors/doctor-thumb-07.jpg" alt="User Image">
+																	<img class="avatar-img rounded-circle" src="../../public/img/doctors/doctor-thumb-07.jpg" alt="User Image">
 																</a>
 																<a href="doctor-profile.html">Dr. Bronya Mcclain <span>Neurology</span></a>
 															</h2>
@@ -351,7 +351,7 @@ include '../../content/header.php';
 														<td>
 															<h2 class="table-avatar">
 																<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
-																	<img class="avatar-img rounded-circle" src="../../assets/img/doctors/doctor-thumb-08.jpg" alt="User Image">
+																	<img class="avatar-img rounded-circle" src="../../public/img/doctors/doctor-thumb-08.jpg" alt="User Image">
 																</a>
 																<a href="doctor-profile.html">Dr. Selestine Farmer <span>Dermatology</span></a>
 															</h2>
@@ -376,7 +376,7 @@ include '../../content/header.php';
 														<td>
 															<h2 class="table-avatar">
 																<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
-																	<img class="avatar-img rounded-circle" src="../../assets/img/doctors/doctor-thumb-09.jpg" alt="User Image">
+																	<img class="avatar-img rounded-circle" src="../../public/img/doctors/doctor-thumb-09.jpg" alt="User Image">
 																</a>
 																<a href="doctor-profile.html">Dr. Gustus Hand <span>Dental</span></a>
 															</h2>
@@ -401,7 +401,7 @@ include '../../content/header.php';
 														<td>
 															<h2 class="table-avatar">
 																<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
-																	<img class="avatar-img rounded-circle" src="../../assets/img/doctors/doctor-thumb-10.jpg" alt="User Image">
+																	<img class="avatar-img rounded-circle" src="../../public/img/doctors/doctor-thumb-10.jpg" alt="User Image">
 																</a>
 																<a href="doctor-profile.html">Dr. Deniece Wiles <span>#0010</span></a>
 															</h2>
@@ -440,17 +440,17 @@ include '../../content/header.php';
 </div>		
 <!-- /Page Content -->
    
-<?php include '../../content/footer.php'; ?>
+<?php include '../app/view/dashboard/content/footer-dash.php'; ?>
 
 <script type="text/javascript">
 
-	$.post("../../app/controllers/pacienteController.php?function=retorna_agendamentos", 
+	/*$.post("../../app/controllers/pacienteController.php?function=retorna_agendamentos", 
 	{
-		id_paciente: <?php echo $_SESSION['IDPACIENTE']; ?>
+		id_paciente: <?php //echo $_SESSION['IDPACIENTE']; ?>
 	},
 
 	function(result){
 		$("#retornoAgendamentos").html(result);
-	});
+	});*/
 
 </script>
