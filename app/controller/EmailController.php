@@ -20,15 +20,15 @@ class EmailController {
 
 		//$mail->SMTPDebug = SMTP::DEBUG_SERVER;
 
-		$mail->Username   = 'heverton.rc.100@gmail.com';
-		$mail->Password   = 'dAjmYZgECtcYdX4';
+		$mail->Username   = '';
+		$mail->Password   = '';
 		// Criptografia do envio SSL também é aceito
 		//$mail->SMTPSecure = 'ssl';
 		// Informações específicadas pelo Google
 		$mail->Host = 'smtp-pulse.com';
 		$mail->Port = '2525';
 		// Define o remetente
-		$mail->setFrom('teste@dotipsandtricks.com', 'Heverton');
+		$mail->setFrom('', '');
 		// Define o destinatário
 		$mail->addAddress($email_dest, $nome_dest);
 		// Conteúdo da mensagem
@@ -56,15 +56,15 @@ class EmailController {
 
 		//$mail->SMTPDebug = SMTP::DEBUG_SERVER;
 
-		$mail->Username   = 'heverton.rc.100@gmail.com';
-		$mail->Password   = 'dAjmYZgECtcYdX4';
+		$mail->Username   = '';
+		$mail->Password   = '';
 		// Criptografia do envio SSL também é aceito
 		//$mail->SMTPSecure = 'ssl';
 		// Informações específicadas pelo Google
 		$mail->Host = 'smtp-pulse.com';
 		$mail->Port = '2525';
 		// Define o remetente
-		$mail->setFrom('teste@dotipsandtricks.com', 'Heverton');
+		$mail->setFrom('', '');
 		// Define o destinatário
 		$mail->addAddress($email_dest, $nome_dest);
 		// Conteúdo da mensagem
